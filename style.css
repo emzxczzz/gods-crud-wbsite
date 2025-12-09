@@ -1,0 +1,133 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* BACKGROUNDS */
+.bg-home {
+    background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200') 
+                no-repeat center/cover;
+}
+.bg-crud {
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200') 
+                no-repeat center/cover;
+}
+.bg-history {
+    background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1200') 
+                no-repeat center/cover;
+}
+
+/* INTRO SECTION */
+.intro {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* TEAM MEMBERS GRID */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 members per row */
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px; /* better width for 4-per-row layout */
+    margin: auto;
+}
+
+
+/* MEMBER CARD */
+.member {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left; /* left-align all content */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+.member:hover {
+    transform: translateY(-5px);
+}
+
+/* PROFILE IMAGE */
+.member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* NAME */
+.member p {
+    font-weight: 700; /* bold */
+    font-size: 17px;
+    margin: 5px 0 2px 0;
+}
+
+/* DESCRIPTION */
+.member .desc {
+    font-size: 14px;
+    color: #444;
+    margin-top: 0;
+}
+
+/* CRUD + TABLE STYLES */
+.container {
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* BUTTONS */
+button {
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #444;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer CRUD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-crud">
+
+<header><h1>Customer CRUD System</h1></header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="crud.html">Customer CRUD</a>
+</nav>
+
+<div class="container">
+    <h2>Add Customer</h2>
+
+    <input id="name" placeholder="Full Name">
+    <input id="email" placeholder="Email Address">
+    <input id="phone" placeholder="Phone Number">
+    <input id="age" placeholder="Age">
+    <input id="address" placeholder="Full Address">
+    <input id="notes" placeholder="Notes (optional)">
+
+    <!-- Add button -->
+    <button id="addBtn">Add</button>
+
+    <h2>Customer List</h2>
+
+    <!-- ✅ SEARCH BAR PLACED HERE -->
+    <input id="searchInput" placeholder="Search by name, email, phone, address...">
+    <button id="searchBtn">Search</button>
+    <button id="resetBtn">Reset</button>
+    <br><br>
+
+    <table id="customerTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Notes</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
